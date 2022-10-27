@@ -5,7 +5,7 @@ using namespace std;
 
 Employee :: Employee(){
     _payRate=0;
-    energyLevel=100.0;
+    energyLevel=100;
 }
 
 Employee :: Employee(int payRate){
@@ -13,9 +13,9 @@ Employee :: Employee(int payRate){
 }
 
 void Employee :: takeABreak(int mins){
-    energyLevel=energyLevel+mins*2.0;
-    if(energyLevel>=100.0){
-        energyLevel=100.0;
+    energyLevel=energyLevel+mins*2;
+    if(energyLevel>=100){
+        energyLevel=100;
     }
 }
 
