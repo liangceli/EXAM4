@@ -13,10 +13,10 @@ Employee :: Employee(int payRate){
 }
 
 void Employee :: takeABreak(int mins){
-    energyLevel=energyLevel+mins*2;
     if(energyLevel>=100){
-        energyLevel=100;
+        return;
     }
+    energyLevel=energyLevel+mins*2;
 }
 
 void Employee :: set_payRate(int rate){
