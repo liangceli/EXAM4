@@ -6,9 +6,11 @@ using namespace std;
 
 Casual :: Casual(){
     dayCount=0;
+    payment=0.0;
 }
 
 Casual :: Casual(int payRate){
+    payment=0.0;
     dayCount=0;
     _payRate=payRate;
     energyLevel=100.0;

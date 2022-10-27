@@ -19,18 +19,18 @@ void Employee :: takeABreak(int mins){
     }
 }
 
-void Employee :: set_payrate(int rate){
+void Employee :: set_payRate(int rate){
     _payRate=rate;
 }
 
-int Employee :: get_payrate(){
+int Employee :: get_payRate(){
     return _payRate;
 }
 
-void Employee :: set_energylevel(float level){
+void Employee :: set_energyLevel(float level){
     energyLevel=level;
 }
 
-float Employee :: get_energylevel(){
+float Employee :: get_energyLevel(){
     return energyLevel;
 }

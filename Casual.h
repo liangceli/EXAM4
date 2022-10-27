@@ -5,7 +5,8 @@
 
 class Casual: public Employee{
     private:
-    int dayCount;   
+    int dayCount; 
+    float payment;  
 
     public:
     Casual();           

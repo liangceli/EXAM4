@@ -8,6 +8,7 @@ Manager :: Manager(){
     daysWorked=0;
     energyLevel=100.0;
     hoursWorked=0.0;
+    payment=0.0;
 
 }    
 
@@ -16,13 +17,14 @@ Manager :: Manager(int payRate){
     _payRate=payRate;
     energyLevel=100.0;
     hoursWorked=0.0;
+    payment=0.0;
 }  
 
 void Manager :: set_hours(int h){
     hoursWorked=h;
 }
 
-float Manager :: get_hours(){
+float Manager :: get_hoursWorked(){
     return hoursWorked;
 }
 
@@ -30,7 +32,7 @@ void Manager :: set_days(int d){
     daysWorked=d;
 }
 
-int Manager :: get_days(){
+int Manager :: get_daysWorked(){
     return daysWorked;
 }
 
@@ -53,7 +55,6 @@ void Manager :: work(int mins){
 }
 
 float Manager :: pay(){
-    float payment;
     payment=daysWorked*8*_payRate;
     daysWorked=0;
     hoursWorked=0.0;
